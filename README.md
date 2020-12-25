@@ -1,5 +1,6 @@
-# [ATOZ - Agency](https://startbootstrap.com/themes/agency/)
+# [ATOZ - Agency](https://jsephora.github.io/ATOZ-agency/)
 
+Preview here: [https://jsephora.github.io/ATOZ-agency/](https://jsephora.github.io/ATOZ-agency/)
 
 #### npm Scripts
 
