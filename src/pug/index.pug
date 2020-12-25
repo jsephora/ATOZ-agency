@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Agency - Start Bootstrap Theme
+        title ATOZ - with Joey Sephora
 
         link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
 
@@ -16,7 +16,7 @@ html(lang='en')
         script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
 
         // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap', rel='stylesheet', type='text/css')
         link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
         link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
 
@@ -28,65 +28,78 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             .container
-                a.navbar-brand.js-scroll-trigger(href='#page-top')
-                    img(src='assets/img/navbar-logo.svg', alt='')
-                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    | Menu
-                    i.fas.fa-bars.ml-1
+                .navContainer
+                    a.navbar-brand.js-scroll-trigger(href='#page-top')
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109.28 25.77" fill="currentColor">
+                            <g data-name="ATOZ-logo">
+                                <g data-name="ATOZ-logo2">
+                                    <path d="M17.75.11L6 25.48H4.14L15.88.11M13.61.11L1.87 25.48H0L11.73.11M25.5.25h1.77l11.61 25.09h-2.03l-3.17-6.98h-14.7l-3.17 6.98h-1.92L25.5.25zM47.85 2.13h-8.69V.43h19.22v1.7H49.7v23.21h-1.85V2.13zM61 13v-.07C61 6.09 66 0 73.51 0S86 6 86 12.81v.07c0 6.8-5 12.89-12.56 12.89S61 19.75 61 13zM89.6 24.31L106.64 2.1H90.2V.43h19.08v1.03L92.23 23.67h17.05v1.67H89.6v-1.03z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.05 25.38">
+                            <g id="nav_menu" data-name="nav_menu">
+                                <g data-name="menu">
+                                    <path d="M17.75 0L6 25.38H4.14L15.88 0M13.61 0L1.87 25.38H0L11.73 0M22.05 0L10.32 25.38H8.45L20.18 0"/>
+                                </g>
+                            </g>
+                        </svg>
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ml-auto
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#services') Services
+                        //- li.nav-item
+                        //-     a.nav-link.js-scroll-trigger(href='#services') Services
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#portfolio') Portfolio
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#about') About
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#team') Team
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#contact') Contact
+                        //- li.nav-item
+                        //-     a.nav-link.js-scroll-trigger(href='#experience') Experience
+                        //- li.nav-item
+                        //-     a.nav-link.js-scroll-trigger(href='#team') Team
+                        //- li.nav-item
+                        //-     a.nav-link.js-scroll-trigger(href='#contact') Contact
         // Masthead
         header.masthead
             .container
-                .masthead-subheading Welcome To Our Studio!
-                .masthead-heading.text-uppercase It's Nice To Meet You
-                a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') Tell Me More
+                //- .masthead-subheading Welcome To Our Studio!
+                .masthead-heading 
+                    img(src='assets/img/hello.svg', alt='hello//maido')
+                //- a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services') Tell Me More
 
         // Services
-        section#services.page-section
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Services
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                .row.text-center
-                    .col-md-4
-                        span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
-                        h4.my-3 E-Commerce
-                        p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-                    .col-md-4
-                        span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-laptop.fa-stack-1x.fa-inverse
-                        h4.my-3 Responsive Design
-                        p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-                    .col-md-4
-                        span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-lock.fa-stack-1x.fa-inverse
-                        h4.my-3 Web Security
-                        p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+        //- section#services.page-section
+        //-     .container
+        //-         .text-center
+        //-             h2.section-heading.text-uppercase Services
+        //-             h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+        //-         .row.text-center
+        //-             .col-md-4
+        //-                 span.fa-stack.fa-4x
+        //-                     i.fas.fa-circle.fa-stack-2x.text-primary
+        //-                     i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
+        //-                 h4.my-3 E-Commerce
+        //-                 p.text-muted
+        //-                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+        //-             .col-md-4
+        //-                 span.fa-stack.fa-4x
+        //-                     i.fas.fa-circle.fa-stack-2x.text-primary
+        //-                     i.fas.fa-laptop.fa-stack-1x.fa-inverse
+        //-                 h4.my-3 Responsive Design
+        //-                 p.text-muted
+        //-                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+        //-             .col-md-4
+        //-                 span.fa-stack.fa-4x
+        //-                     i.fas.fa-circle.fa-stack-2x.text-primary
+        //-                     i.fas.fa-lock.fa-stack-1x.fa-inverse
+        //-                 h4.my-3 Web Security
+        //-                 p.text-muted
+        //-                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
 
         // Portfolio Grid
         section#portfolio.page-section.bg-light
             .container
                 .text-center
                     h2.section-heading.text-uppercase Portfolio
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                    h3.section-subheading.text-muted Some of my recent work.
                 .row
                     .col-lg-4.col-sm-6.mb-4
                         .portfolio-item
@@ -94,10 +107,10 @@ html(lang='en')
                                 .portfolio-hover
                                     .portfolio-hover-content
                                         i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/01-thumbnail.jpg', alt='')
+                                img.img-fluid(src='assets/img/portfolio/01-thumbnail.jpg', alt='research and development')
                             .portfolio-caption
-                                .portfolio-caption-heading Threads
-                                .portfolio-caption-subheading.text-muted Illustration
+                                .portfolio-caption-heading R&D Tax Incentive Project
+                                .portfolio-caption-subheading.text-muted UI/UX and Interaction Design, FED
                     .col-lg-4.col-sm-6.mb-4
                         .portfolio-item
                             a.portfolio-link(data-toggle='modal', href='#portfolioModal2')
@@ -106,8 +119,8 @@ html(lang='en')
                                         i.fas.fa-plus.fa-3x
                                 img.img-fluid(src='assets/img/portfolio/02-thumbnail.jpg', alt='')
                             .portfolio-caption
-                                .portfolio-caption-heading Explore
-                                .portfolio-caption-subheading.text-muted Graphic Design
+                                .portfolio-caption-heading Business Registration Service
+                                .portfolio-caption-subheading.text-muted UI/UX and Interaction Design, FED
                     .col-lg-4.col-sm-6.mb-4
                         .portfolio-item
                             a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
@@ -149,163 +162,163 @@ html(lang='en')
                                 .portfolio-caption-heading Window
                                 .portfolio-caption-subheading.text-muted Photography
 
-        // About
-        section#about.page-section
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase About
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                ul.timeline
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 2009-2011
-                                h4.subheading Our Humble Beginnings
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/2.jpg', alt='')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 March 2011
-                                h4.subheading An Agency is Born
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/3.jpg', alt='')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 December 2012
-                                h4.subheading Transition to Full Service
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 July 2014
-                                h4.subheading Phase Two Expansion
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            h4
-                                | Be Part
-                                br
-                                | Of Our
-                                br
-                                | Story!
+        // Experience
+        //- section#experience.page-section
+        //-     .container
+        //-         .text-center
+        //-             h2.section-heading.text-uppercase Experience
+        //-             h3.section-subheading.text-muted A brief history of my most recent experience.
+        //-         ul.timeline
+        //-             li
+        //-                 .timeline-image
+        //-                     img.rounded-circle.img-fluid(src='assets/img/experience/1.jpg', alt='')
+        //-                 .timeline-panel
+        //-                     .timeline-heading
+        //-                         h4 Consultant, Bartender, Salesman, Game-tester, Law clerk, Bank teller
+        //-                         h5.subheading San Francisco, USA
+        //-                     .timeline-body
+        //-                         p.text-muted
+        //-                             | Some of the funnest years of my life in San Francisco during the so-called "Dotcom Bubble", working various jobs after earning a Bachelor's degree in International Business from the University of San Francisco.
+        //-             li.timeline-inverted
+        //-                 .timeline-image
+        //-                     img.rounded-circle.img-fluid(src='assets/img/experience/2.jpg', alt='')
+        //-                 .timeline-panel
+        //-                     .timeline-heading
+        //-                         h4 English teacher
+        //-                         h5.subheading Osaka, Japan
+        //-                     .timeline-body
+        //-                         p.text-muted
+        //-                             | Teaching is one of the most challenging jobs in the world, and yet the pay is outrageously low! I barely survived and yet I was more alive than ever. Living and working in Osaka was an unforgettable experience.
+        //-             li
+        //-                 .timeline-image
+        //-                     img.rounded-circle.img-fluid(src='assets/img/experience/3.jpg', alt='')
+        //-                 .timeline-panel
+        //-                     .timeline-heading
+        //-                         h4 Web designer + kitchenhand
+        //-                         h5.subheading Sydney, Australia
+        //-                     .timeline-body
+        //-                         p.text-muted
+        //-                             | After making gyoza and ramen in the back of a steamy Japanese noodle shop all day, I'd swim at Bondi Beach before doing freelance graphic and web design at night. This led to a job at Optus where I got to learn some of the tricks of online marketing!
+        //-             li.timeline-inverted
+        //-                 .timeline-image
+        //-                     img.rounded-circle.img-fluid(src='assets/img/experience/4.jpg', alt='')
+        //-                 .timeline-panel
+        //-                     .timeline-heading
+        //-                         h4 UI Designer
+        //-                         h5.subheading Canberra, Australia
+        //-                     .timeline-body
+        //-                         p.text-muted
+        //-                             | I am proud and honoured to be designing and building services for the Australian public. Leading the design of Centrelink's online services, the Business Registration Service, the Australian Business License and Information Service and now the R&D Tax Incentive program.
+        //-             li.timeline-inverted
+        //-                 .timeline-image
+        //-                     h4
+        //-                         | Where
+        //-                         br
+        //-                         | to
+        //-                         br
+        //-                         | Next?
 
         // Team
-        section#team.page-section.bg-light
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Our Amazing Team
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                .row
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/1.jpg', alt='')
-                            h4 Kay Garland
-                            p.text-muted Lead Designer
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-linkedin-in
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/2.jpg', alt='')
-                            h4 Larry Parker
-                            p.text-muted Lead Marketer
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-linkedin-in
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/3.jpg', alt='')
-                            h4 Diana Petersen
-                            p.text-muted Lead Developer
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!')
-                                i.fab.fa-linkedin-in
-                .row
-                    .col-lg-8.mx-auto.text-center
-                        p.large.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+        //- section#team.page-section.bg-light
+        //-     .container
+        //-         .text-center
+        //-             h2.section-heading.text-uppercase About me
+        //-             h3.section-subheading.text-muted "I don't like to talk about myself"
+        //-         .row
+        //-             .col
+        //-                 .team-member
+        //-                     img.mx-auto.rounded-circle(src='assets/img/team/joey1.jpg', alt='joey at the river')
+        //-                     h4 Joey Sephora
+        //-                     p.text-muted Interaction Designer
+        //-                     a.btn.btn-dark.btn-social.mx-2(href='#!')
+        //-                         i.fab.fa-twitter
+        //-                     a.btn.btn-dark.btn-social.mx-2(href='#!')
+        //-                         i.fab.fa-facebook-f
+        //-                     a.btn.btn-dark.btn-social.mx-2(href='#!')
+        //-                         i.fab.fa-linkedin-in
+                    //- .col-lg-4
+                    //-     .team-member
+                    //-         img.mx-auto.rounded-circle(src='assets/img/team/2.jpg', alt='')
+                    //-         h4 Larry Parker
+                    //-         p.text-muted Lead Marketer
+                    //-         a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-             i.fab.fa-twitter
+                    //-         a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-             i.fab.fa-facebook-f
+                    //-         a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-             i.fab.fa-linkedin-in
+                    //- .col-lg-4
+                    //-     .team-member
+                    //-         img.mx-auto.rounded-circle(src='assets/img/team/3.jpg', alt='')
+                    //-         h4 Diana Petersen
+                    //-         p.text-muted Lead Developer
+                    //-         a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-             i.fab.fa-twitter
+                    //-         a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-             i.fab.fa-facebook-f
+                    //-         a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-             i.fab.fa-linkedin-in
+                //- .row
+                //-     .col-lg-8.mx-auto.text-center
+                //-         p.large.text-muted
+                //-             | For me, design is about solving human problems. When you are surrounded by technology experts every day it can be challenging, but my ability to empathise allows me to make interacting with computers more intuitive for the people who aren't experts.
 
         // Clients
-        div.py-5
-            .container
-                .row
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/envato.jpg', alt='')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/designmodo.jpg', alt='')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/themeforest.jpg', alt='')
-                    .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/creative-market.jpg', alt='')
+        //- div.py-5
+        //-     .container
+        //-         .row
+        //-             .col-md-3.col-sm-6.my-3
+        //-                 a(href='#!')
+        //-                     img.img-fluid.d-block.mx-auto(src='assets/img/logos/envato.jpg', alt='')
+        //-             .col-md-3.col-sm-6.my-3
+        //-                 a(href='#!')
+        //-                     img.img-fluid.d-block.mx-auto(src='assets/img/logos/designmodo.jpg', alt='')
+        //-             .col-md-3.col-sm-6.my-3
+        //-                 a(href='#!')
+        //-                     img.img-fluid.d-block.mx-auto(src='assets/img/logos/themeforest.jpg', alt='')
+        //-             .col-md-3.col-sm-6.my-3
+        //-                 a(href='#!')
+        //-                     img.img-fluid.d-block.mx-auto(src='assets/img/logos/creative-market.jpg', alt='')
 
         // Contact
-        section#contact.page-section
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Contact Us
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                form#contactForm(name='sentMessage', novalidate='novalidate')
-                    .row.align-items-stretch.mb-5
-                        .col-md-6
-                            .form-group
-                                input#name.form-control(type='text', placeholder='Your Name *', required='required', data-validation-required-message='Please enter your name.')
-                                p.help-block.text-danger
-                            .form-group
-                                input#email.form-control(type='email', placeholder='Your Email *', required='required', data-validation-required-message='Please enter your email address.')
-                                p.help-block.text-danger
-                            .form-group.mb-md-0
-                                input#phone.form-control(type='tel', placeholder='Your Phone *', required='required', data-validation-required-message='Please enter your phone number.')
-                                p.help-block.text-danger
-                        .col-md-6
-                            .form-group.form-group-textarea.mb-md-0
-                                textarea#message.form-control(placeholder='Your Message *', required='required', data-validation-required-message='Please enter a message.')
-                                p.help-block.text-danger
-                    .text-center
-                            #success
-                            button#sendMessageButton.btn.btn-primary.btn-xl.text-uppercase(type='submit') Send Message
+        //- section#contact.page-section
+        //-     .container
+        //-         .text-center
+        //-             h2.section-heading.text-uppercase Contact Us
+        //-             h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+        //-         form#contactForm(name='sentMessage', novalidate='novalidate')
+        //-             .row.align-items-stretch.mb-5
+        //-                 .col-md-6
+        //-                     .form-group
+        //-                         input#name.form-control(type='text', placeholder='Your Name *', required='required', data-validation-required-message='Please enter your name.')
+        //-                         p.help-block.text-danger
+        //-                     .form-group
+        //-                         input#email.form-control(type='email', placeholder='Your Email *', required='required', data-validation-required-message='Please enter your email address.')
+        //-                         p.help-block.text-danger
+        //-                     .form-group.mb-md-0
+        //-                         input#phone.form-control(type='tel', placeholder='Your Phone *', required='required', data-validation-required-message='Please enter your phone number.')
+        //-                         p.help-block.text-danger
+        //-                 .col-md-6
+        //-                     .form-group.form-group-textarea.mb-md-0
+        //-                         textarea#message.form-control(placeholder='Your Message *', required='required', data-validation-required-message='Please enter a message.')
+        //-                         p.help-block.text-danger
+        //-             .text-center
+        //-                     #success
+        //-                     button#sendMessageButton.btn.btn-primary.btn-xl.text-uppercase(type='submit') Send Message
 
         // Footer
         footer.footer.py-4
             .container
                 .row.align-items-center
                     .col-lg-4.text-lg-left
-                        | Copyright © Your Website 2020
-                    .col-lg-4.my-3.my-lg-0
-                        a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            i.fab.fa-twitter
-                        a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            i.fab.fa-facebook-f
-                        a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            i.fab.fa-linkedin-in
+                        | Copyright © Joey Sephora 2020
+                    //- .col-lg-4.my-3.my-lg-0
+                    //-     a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-         i.fab.fa-twitter
+                    //-     a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-         i.fab.fa-facebook-f
+                    //-     a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-         i.fab.fa-linkedin-in
                     .col-lg-4.text-lg-right
                         a.mr-3(href='#!') Privacy Policy
                         a(href='#!') Terms of Use
@@ -322,14 +335,14 @@ html(lang='en')
                             .col-lg-8
                                 .modal-body
                                     // Project Details Go Here
-                                    h2.text-uppercase Project Name
-                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/01-full.jpg', alt='')
-                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                                    h2.text-uppercase RDTI
+                                    p.item-intro.text-muted R&D Tax Incentive (RDTI) is still classified.
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/rdti-01-full.jpg', alt='rdti project screen')
+                                    p R&D Tax Incentive (RDTI) - a government initiative that incentivizes research and development in the hope that it will lead to innovation and new technology. As Lead UI Designer on the project, my challenge was to transform a lengthy application form with complicated rules into a simple and intuitive experience
                                     ul.list-inline
                                         li Date: January 2020
-                                        li Client: Threads
-                                        li Category: Illustration
+                                        li Client: Department of Industry, Science, Environment and Resources
+                                        li Category: UI/UX Design, Interaction, FED
                                     button.btn.btn-primary(data-dismiss='modal', type='button')
                                         i.fas.fa-times.mr-1
                                         | Close Project
@@ -344,7 +357,7 @@ html(lang='en')
                             .col-lg-8
                                 .modal-body
                                     // Project Details Go Here
-                                    h2.text-uppercase Project Name
+                                    h2.text-uppercase Business Registration Service
                                     p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
                                     img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/02-full.jpg', alt='')
                                     p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
