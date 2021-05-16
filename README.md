@@ -1,7 +1,5 @@
 # [ATOZ - Agency](https://jsephora.github.io/newportfolio/)
 
-Preview here: [https://jsephora.github.io/newportfolio/](https://jsephora.github.io/newportfolio/)
-
 Live site here: [https://joeysephora.netlify.app] (https://joeysephora.netlify.app)
 
 ## Special Thanks
