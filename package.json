@@ -1,6 +1,6 @@
 {
-    "title": "Agency",
-    "name": "startbootstrap-agency",
+    "title": "Joey Sephora | Front-end Developer",
+    "name": "joeys-portfolio",
     "version": "6.0.2",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
@@ -22,7 +22,7 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/agency",
+    "homepage": "https://joeysephora.netlify.app",
     "bugs": {
         "url": "https://github.com/StartBootstrap/startbootstrap-agency/issues",
         "email": "feedback@startbootstrap.com"
@@ -34,7 +34,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-agency.git"
+        "url": "https://github.com/jsephora/newportfolio.git"
     },
     "dependencies": {
         "bootstrap": "4.5.0"
